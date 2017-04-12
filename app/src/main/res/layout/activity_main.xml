@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00695c"
+    android:orientation="vertical"
+    android:theme="@style/AppTheme"
+    tools:context="com.example.android.quizapp.MainActivity">
+
+    <!-- title -->
+
+    <TextView
+        android:id="@+id/quiz_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16sp"
+        android:gravity="center"
+        android:text="Tesla Quiz"
+        android:textColor="@android:color/white"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16sp"
+        android:layout_marginLeft="16sp"
+        android:layout_marginRight="16sp"
+        android:layout_marginTop="0sp"
+        android:gravity="center"
+        android:text="Complete this form to see how much you know about Tesla"
+        android:textColor="@android:color/white"
+        android:textSize="12dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="8sp"
+        android:layout_marginRight="8sp"
+        android:background="@android:color/darker_gray" />
+
+    <!-- Content -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        android:background="@android:color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--Question 1 -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#eeeeee"
+                android:text="@string/Question1" />
+
+            <CheckBox
+                android:id="@+id/Tesla1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tesla" />
+
+            <CheckBox
+                android:id="@+id/SpaceX1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Space X" />
+
+
+            <CheckBox
+                android:id="@+id/PayPal1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pay Pal" />
+
+
+            <CheckBox
+                android:id="@+id/Facebook1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Facebook" />
+
+            <!--Question 2 -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#eeeeee"
+                android:text="@string/Question2" />
+
+            <RadioGroup
+                android:id="@+id/Q2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/Musk2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Elon Musk" />
+
+                <RadioButton
+                    android:id="@+id/Mark2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mark Zuckerberg" />
+
+                <RadioButton
+                    android:id="@+id/Jobs2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Steve Jobs" />
+
+                <RadioButton
+                    android:id="@+id/Sergey2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sergey Brin" />
+            </RadioGroup>
+
+            <!--Question 3 -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#eeeeee"
+                android:text="@string/Question3" />
+
+            <RadioGroup
+                android:id="@+id/Q3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/PayPal3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pay Pal" />
+
+                <RadioButton
+                    android:id="@+id/Tesla3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tesla" />
+
+                <RadioButton
+                    android:id="@+id/Apple3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Apple" />
+
+                <RadioButton
+                    android:id="@+id/SpaceX3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Space X" />
+            </RadioGroup>
+
+            <!--Question 4 -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#eeeeee"
+                android:text="@string/Question4" />
+
+            <EditText
+                android:id="@+id/number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:hint="Number"
+                android:inputType="textCapWords" />
+
+            <!--Question 5 -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#eeeeee"
+                android:text="@string/Question5" />
+
+            <RadioGroup
+                android:id="@+id/Q5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/Model3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Model 3" />
+
+                <RadioButton
+                    android:id="@+id/ModelX"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Model X" />
+
+                <RadioButton
+                    android:id="@+id/ModelS"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Model S" />
+
+                <RadioButton
+                    android:id="@+id/Roadster"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Roadster" />
+            </RadioGroup>
+
+            <!--Question 6 -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#eeeeee"
+                android:text="@string/Question6" />
+
+            <RadioGroup
+                android:id="@+id/Q6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/Saturn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Saturn" />
+
+                <RadioButton
+                    android:id="@+id/Mars"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mars" />
+
+                <RadioButton
+                    android:id="@+id/Pluto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pluto" />
+            </RadioGroup>
+            <!--Submit button -->
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="submit"
+                android:text="Submit" />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

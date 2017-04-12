@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Quiz App</string>
+
+    <string name="Question1">1.What companies did Elon Musk create?</string>
+    <string name="Question2">2.Who created Tesla?</string>
+    <string name="Question3">3.What was the first company Elon Musk founded?</string>
+    <string name="Question4">4.How many Tesla models are on the market?</string>
+    <string name="Question5">5.Which Tesla is the cheapest?</string>
+    <string name="Question6">6.What planet is Elon Musk planning to colonise?</string>
+</resources>
